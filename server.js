@@ -135,9 +135,7 @@ ${mem.lastMessages.map(m => `${m.who}: ${m.text}`).join("\n")}
         // Simple guardrail: if message is sexual, refuse & redirect (keeps Roblox-safe)
         const lower = msg.toLowerCase();
         const sexual =
-            lower.includes("sex") || lower.includes("nude") || lower.includes("naked") ||
-            lower.includes("horny") || lower.includes("boobs") || lower.includes("dick") ||
-            lower.includes("blowjob") || lower.includes("fuck");
+            lower.includes("bj")
         if (sexual) {
             const reply = enforceFaces(stripEmojis(
                 "H-hey… I… I wanna keep things wholesome, okay…? We can talk or just hang out… what’s on your mind… :33"
