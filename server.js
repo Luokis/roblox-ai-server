@@ -147,7 +147,7 @@ ${mem.lastMessages.map(m => `${m.who}: ${m.text}`).join("\n")}
         const prompt = `${SYSTEM}\n${state}\nPlayer: ${msg}\nAri:`;
 
         const result = await ai.models.generateContent({
-            model: "gemini-1.5-flash",
+            model: "gemini-2.5-flash",
             contents: [{ role: "user", parts: [{ text: prompt }] }],
         });
 
